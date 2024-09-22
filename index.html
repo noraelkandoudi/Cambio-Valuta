@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Impostazione della codifica dei caratteri -->
+    <meta charset="UTF-8">
+    <!-- Impostazione della viewport per la risoluzione dello schermo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Collegamento al file di stile CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Collegamento al file di stile CSS di Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Collegamento al file di stile CSS dei caratteri di Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Titolo della pagina -->
+    <title>Currency Converter</title>
+</head>
+<body>
+    <!-- Contenitore principale della pagina -->
+    <div class="container">
+        <!-- Titolo della pagina -->
+        <h2>Currency Converter</h2>
+        <!-- Messaggio personale :) -->
+        <h1> :) Miss my bea </h1>
+        <!-- Form per la conversione delle valute -->
+        <form action="">
+            <!-- Sezione per l'inserimento dell'importo -->
+            <div class="amount">
+                <p>Inserisci importo</p>
+                <input value="1" type="text">
+            </div>
+
+            <!-- Sezione per la selezione delle valute -->
+            <div class="dropdown">
+                <!-- Sezione "From" -->
+                <div class="from">
+                    <p>Da</p>
+                    <div class="select-container">
+                        <!-- Bandiera dell'Italia -->
+                        <img src="https://flagsapi.com/IT/flat/64.png">
+                        <select name="from"></select>
+                    </div>
+                </div>
+
+                <!-- Icona di scambio -->
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                
+                <!-- Sezione "To" -->
+                <div class="to">
+                    <p>A</p>
+                    <div class="select-container">
+                        <!-- Bandiera del Brasile -->
+                        <img src="https://flagsapi.com/BR/flat/64.png">
+                        <select name="to"></select>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Messaggio di output -->
+            <div class="msg">1 EUR = 0.061 BR</div>
+            <!-- Bottone per ottenere il tasso di cambio -->
+            <button>Ottieni tasso di cambio</button>
+        </form>
+    </div>
+    <!-- Script per il codice JavaScript -->
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
